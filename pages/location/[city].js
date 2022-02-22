@@ -87,6 +87,7 @@ export default function City({
           <Link href="/">
             <a className="black-link">&larr;HOME</a>
           </Link>
+    <br/>
           <SearchBox placeholder="Search for another location.. " />
           <TodaysWeather
             city={city}
