@@ -8,9 +8,9 @@ function TodaysWeather({ city, weather, timezone }) {
 
   return (
     <>
-      <div className="today">
+      <div className="today" style={{ backgroundColor:"#68BBE3" }}>
         <div className="today__inner">
-          <div className="today__left-content">
+          <div className="today__left-content" >
             <h1>
               {city.name}({city.country})
             </h1>

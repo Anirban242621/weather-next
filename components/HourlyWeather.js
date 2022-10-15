@@ -3,12 +3,12 @@ import moment from "moment-timezone";
 import Image from "next/image";
 export default function HourlyWeather({ hourlyWeather, timezone }) {
   return (
-    <div className="hourly">
-      <div className="hourly__inner">
+    <div className="hourly" >
+      <div className="hourly__inner" >
         {hourlyWeather.length > 0 &&
           hourlyWeather.map((weather, index) => (
-            <div className="hourly__box-wrapper" key={weather.dt}>
-              <div className="hourly__box">
+            <div className="hourly__box-wrapper" key={weather.dt} >
+              <div className="hourly__box" style={{ backgroundColor:"#189AB4" }}>
                 <span
                   className={`hourly__time--now${
                     index == 0 ? "hourly__time--now" : ""
